@@ -10,13 +10,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.appstone.www.secure_gate_app.maintenance">
 
+
     <TextView
-        android:text="Maintenance"
+        android:text="Maintenance Issue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="39dp"
         android:id="@+id/textView6" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:inputType="textPersonName"
+        android:text="Type Your Maintenance Issue Here"
+        android:ems="10"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:id="@+id/editText2" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/button2" />
+
 </RelativeLayout>

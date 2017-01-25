@@ -69,17 +69,6 @@ public class tenant_menu extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-
-
-
-
-
     }
 }
 
