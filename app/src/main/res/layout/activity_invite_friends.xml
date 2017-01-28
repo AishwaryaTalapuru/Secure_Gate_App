@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/no_of_companions"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -13,13 +12,12 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName|phone"
+        android:inputType="phone"
         android:text="Enter Friends's Number"
         android:ems="10"
+        android:id="@+id/friendnumber"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
-        android:id="@+id/friends_no" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -27,18 +25,47 @@
         android:inputType="textPersonName"
         android:text="No of companions"
         android:ems="10"
-        android:layout_below="@+id/friends_no"
-        android:layout_marginTop="34dp"
-        android:id="@+id/no_of_companions"
-        tools:inputType="number" />
+        android:id="@+id/noofpeople"
+        tools:inputType="number"
+        android:layout_below="@+id/friendnumber"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="apartment"
+        android:ems="10"
+        android:layout_marginStart="23dp"
+        android:id="@+id/apartment"
+        android:layout_below="@+id/noofpeople"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Send SMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/no_of_companions"
+        android:id="@+id/insert"
+        tools:layout_width="match_parent"
+        android:layout_below="@+id/apartment"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="99dp"
-        android:id="@+id/button"
-        tools:layout_width="match_parent" />
+        android:layout_marginBottom="30dp"
+        android:id="@+id/show" />
+
+    <TextView
+        android:text=" "
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/insert"
+        android:layout_alignStart="@+id/apartment"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/results" />
 </RelativeLayout>
